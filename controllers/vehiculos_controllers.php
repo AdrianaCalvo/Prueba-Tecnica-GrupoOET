@@ -9,11 +9,11 @@
             $cc_propietario = $_POST["cc_propietario"];
             $cc_conductor = $_POST["cc_conductor"];
 
-            $sql = $conexion->query("insert into vehiculos(placa, color, marca, tipo, cc_propietario, cc_conductor) values('$placa', '$color', ' $marca', $tipo, $cc_propietario, $cc_conductor) ");
+            $sql = $conexion->query("insert into vehiculos(placa, color, marca, tipo, cc_propietario, cc_conductor) values('$placa', '$color', ' $marca', '$tipo', $cc_propietario, $cc_conductor) ");
             if ($sql==1) {
-                echo '<div class="alert alert-success"> Propietario Registrado con Éxito!.</div>';
+                echo '<div class="alert alert-success"> Vehículo Registrado con Éxito!.</div>';
             } else {
-                echo '<div class="alert alert-danger"> Error al registrar propietario.</div>';
+                echo '<div class="alert alert-danger"> Error al registrar Vehículo.</div>';
             }
             
         } else {

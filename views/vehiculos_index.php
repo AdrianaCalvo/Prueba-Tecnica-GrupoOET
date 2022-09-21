@@ -26,8 +26,8 @@
             <div class="mb-3">
                 <select class="form-select" aria-label="Default select example" name="tipo">
                     <option selected>Tipo de vehículo</option>
-                    <option value="1">Particular</option>
-                    <option value="2">Público</option>
+                    <option value="Particular">Particular</option>
+                    <option value="Público">Público</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -61,6 +61,7 @@
             <br>
                 <thead>
                     <tr>
+                        <th scope="col">id</th>
                         <th scope="col">Placa</th>
                         <th scope="col">Color</th>
                         <th scope="col">Marca</th>
